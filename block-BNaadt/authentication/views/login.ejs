@@ -1,0 +1,20 @@
+<%- include('partials/header') -%>
+<div class="container">
+  <div class="buttons form">
+      <h3>Login</h3>
+     <% if(error) { %>
+        <p><%= error %></p>
+     <% } %>
+    <% if(error1) { %>
+       <p><%= error1 %></p>
+    <% } %>
+    <% if(error2) { %>
+      <p><%= error2 %></p>
+   <% } %>
+    <form action="/users/login" method="POST">
+        <input class="form-control" type="email" name="email" id="email" placeholder="Enter Email">
+        <input class="form-control" type="password" name="password" id="password" placeholder="Enter Password">
+        <input class="form-submit" type="submit" value="Login">
+    </form>
+  </div>
+<%- include('partials/footer') -%>
