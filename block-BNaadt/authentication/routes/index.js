@@ -12,4 +12,9 @@ router.get('/dashboard', (req, res, next) => {
   res.render('dashboard', { welcome });
 });
 
+router.get('/logout', (req, res, next) => {
+  req.session.destroy();
+  res.redirect('/users/login');
+});
+
 module.exports = router;
