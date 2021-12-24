@@ -1,0 +1,182 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+body {
+  background-color: antiquewhite;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.3rem 0.5rem;
+}
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.align-items {
+  align-items: center;
+}
+.space-between {
+  justify-content: space-between;
+}
+.logo {
+  color: crimson;
+  font-size: 1.4rem;
+}
+nav {
+  background-color: teal;
+}
+nav ul li {
+  margin-left: 0.5rem;
+  padding: 0.2rem 0.4rem;
+}
+nav ul li a {
+  padding: 0.5rem 0.6rem;
+  font-size: 1.2rem;
+  color: aqua;
+  transition: background-color 2s ease;
+}
+nav ul li a:hover {
+  background-color: burlywood;
+}
+.center {
+  text-align: center;
+}
+.center h2 {
+  font-size: 1.1em;
+}
+.center .btn-index {
+  background-color: aquamarine;
+  color: black;
+  border: 0;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0.8rem;
+  cursor: pointer;
+}
+.post-title {
+  text-align: center;
+  font-size: 1.5rem;
+}
+.post-title span.author {
+  float: right;
+  font-size: 1.3rem;
+}
+.post-description {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  word-break: normal !important;
+}
+.btn-read {
+  background-color: crimson;
+  color: white;
+  border: 0;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  margin: 0.3rem 0.1rem;
+}
+.post-description, .post-title {
+  margin: 0.3rem 0;
+}
+span.like {
+  float: right;
+}
+span.like a {
+  color: black;
+}
+span.like a:hover {
+  color: blue;
+}
+.form {
+  border: 1px solid black;
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.3rem 0.9rem;
+}
+.form-control h3 {
+  text-align: center;
+  font-size: 1.2rem;
+}
+.form-control input, textarea {
+  display: inline-block;
+  width: 100%;
+  padding: 0.4rem 0;
+  margin: 0.3rem 0;
+}
+.form-control .btn-submit {
+  background-color: brown;
+  color: white;
+  width: 50%;
+  cursor: pointer;
+  border: 0;
+  font-size: 1rem;
+}
+.comment {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0.3rem 0.5rem;
+}
+.comment h4 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.comment-post {
+  border: 1px solid black;
+  padding: 0.3rem 0.5rem;
+  margin: 0.3rem 0;
+}
+
+footer {
+  background: teal;
+  color: bisque;
+  padding: 0.3rem;
+}

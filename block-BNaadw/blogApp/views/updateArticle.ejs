@@ -1,0 +1,16 @@
+<%- include('content/header') -%>
+   <div class="container">
+       <div class="form form-control">
+           <h3>Update Blog</h3>
+           <form action="/blogs/<%= article.slug %>" method="POST">
+               <input type="text" name="title" id="title" value="<%= article.title %>">
+               <textarea name="description" id="description" cols="15" rows="5" placeholder="Enter Description"><%= article.description %></textarea>
+               <input type="text" name="author" id="author" value="<%= article.author %>">
+               <div class="center">
+                <input class="btn-submit" type="submit" value="Update Blog">
+             </div>
+            </div>
+           </form>
+       </div>
+   </div>
+<%- include('content/footer') -%>

@@ -1,0 +1,23 @@
+<%- include('content/header') -%>
+   <div class="container">
+       <div class="form form-control">
+           <h3>Register</h3>
+          <% if(exist) { %>
+               <p><%= exist %></p>
+          <% } %>
+          <% if(min) { %>
+            <p><%= min %></p>
+       <% } %>
+           <form action="/users/register" method="POST">
+               <input type="text" name="firstName" id="firstName" placeholder="Enter First Name">
+               <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name">
+               <input type="email" name="email" id="email" placeholder="Enter Email">
+               <input type="password" name="password" id="password" placeholder="Enter Password">
+               <input type="text" name="city" id="city" placeholder="Enter City">
+               <div class="center">
+               <input class="btn-submit" type="submit" value="Register">
+            </div>
+           </form>
+       </div>
+   </div>
+<%- include('content/footer') -%>

@@ -1,0 +1,15 @@
+<%- include('content/header') -%>
+   <main>
+       <section class="container">
+           <% articles.forEach(article => { %>
+            <div class="post">
+                <h2 class="post-title"><%= article.title %> <span class="author"><%= article.author %></span></h2>
+                <p class="post-description"><%= article.description.substr(0, 200) %></p>
+                <a href="/blogs/<%= article.slug %>"><button class="btn-read">Read More</button></a><span class="like">Total Likes: <%= article.likes %> </span>
+            </div>
+            <hr>
+           <% }) %>
+      
+       </section>
+   </main>
+<%- include('content/footer') -%>
