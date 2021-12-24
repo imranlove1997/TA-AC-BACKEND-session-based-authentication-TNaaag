@@ -1,0 +1,15 @@
+<%- include('content/header') -%>
+   <div class="container">
+       <div class="form form-control">
+           <h3>Update Comment</h3>
+           <form action="/comments/<%= comment._id %>" method="POST">
+               <input type="text" name="name" id="name" value="<%= comment.name %>">
+                        <textarea name="comment" id="comment" cols="10" rows="5" placeholder="Enter Comment"><%= comment.comment %></textarea>
+               <div class="center">
+                <input class="btn-submit" type="submit" value="Update Comment">
+             </div>
+            </div>
+           </form>
+       </div>
+   </div>
+<%- include('content/footer') -%>

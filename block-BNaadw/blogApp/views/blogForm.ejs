@@ -1,0 +1,16 @@
+<%- include('content/header') -%>
+   <div class="container">
+       <div class="form form-control">
+           <h3>Add Blog</h3>
+           <form action="/blogs" method="POST">
+               <input type="text" name="title" id="title" placeholder="Enter Title">
+               <textarea name="description" id="description" cols="15" rows="5" placeholder="Enter Description"></textarea>
+               <input type="hidden" name="author" id="author" value="<%= user.fullName %>">
+               <div class="center">
+                <input class="btn-submit" type="submit" value="Add Blog">
+             </div>
+            </div>
+           </form>
+       </div>
+   </div>
+<%- include('content/footer') -%>
